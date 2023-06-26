@@ -11,6 +11,14 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'smardashboard',
+    loadChildren: () => import('./pages/smardashboard/smardashboard.module').then( m => m.SmardashboardPageModule)
+  },
+  {
+    path: 'smar1',
+    loadChildren: () => import('./pages/smar1/smar1.module').then( m => m.Smar1PageModule)
+  },
 ];
 
 @NgModule({

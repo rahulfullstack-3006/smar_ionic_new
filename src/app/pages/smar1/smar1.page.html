@@ -1,0 +1,179 @@
+<ion-content>
+  <div class="smar">
+    <ion-header>
+      <h1 class="flex_center">Sales Manager’s Assessment Report (SMAR)</h1>
+    </ion-header>
+
+    <form>
+      <div class="smar1_main"> 
+        <div class="smar1_main_left">
+
+          <div class="type_of_contact"> 
+            <ion-label>Type of contact</ion-label><br><br>
+              <ion-label>
+                <ion-radio value="option1"></ion-radio>
+                Personal Meeting	
+              </ion-label><br>
+              <ion-label>
+                <ion-radio value="option2"></ion-radio>
+                Telephone (if telephone please provide the following details)
+              </ion-label>
+            </div>
+    
+            <div class="policy_number">
+                <ion-label >Policy Number</ion-label>
+                <ion-input type="text" ></ion-input>      
+            </div>
+
+            <div class="policy_number">
+               <ion-label >Name of the Life to be insured</ion-label>
+                <ion-input type="text" ></ion-input>
+                
+              </div>
+
+              <div class="policy_number">
+                <ion-label>Does the customer have a relationship with Central Bank of India:</ion-label><br><br>
+                <ion-label>
+                  <ion-radio value="yes"></ion-radio>
+                  Yes
+                </ion-label>    
+                <ion-label>
+                  <ion-radio value="no"></ion-radio>
+                  No
+                </ion-label>  
+              </div>
+
+              <div class="policy_number">
+                <ion-label>Are you satisfied about the identity of the Life to be insured & Proposer?</ion-label><br><br>
+                <ion-label>
+                  <ion-radio value="yes"></ion-radio>
+                  Yes
+                </ion-label>    
+                <ion-label>
+                  <ion-radio value="no"></ion-radio>
+                  No
+                </ion-label>  
+              </div>
+
+              <div class="policy_number">
+                <ion-label>Is the Life to be insured / Proposer related to the Bank’s Sales(If Yes, please state relationship) Manager?</ion-label><br><br>
+                <ion-label>
+                  <ion-radio value="yes"></ion-radio>
+                  Yes
+                </ion-label>    
+                <ion-label>
+                  <ion-radio value="no"></ion-radio>
+                  No
+                </ion-label>  
+              </div>
+
+              <div class="if_yes_relationship">
+              <ion-label>If Yes, please state relationship</ion-label>
+              <ion-select  interface="popover" placeholder="Select">
+              <ion-select-option value="spouse">Spouse</ion-select-option>
+              <ion-select-option value="parent">Parent</ion-select-option>
+              <ion-select-option value="children">Children</ion-select-option>
+              <ion-select-option value="uncle">Uncle</ion-select-option>
+              </ion-select>
+              </div>
+
+              <div class="policy_number">
+                <ion-label >If No, by whom was the Life to be insured / Proposer introduced to the Bank’s Sales Manager</ion-label>
+                <ion-input type="text" ></ion-input>      
+            </div>
+
+
+        </div> 
+        <div class="smar1_main_right">
+
+          <div class="tele_no_called">
+            <ion-label >Tele No called </ion-label>
+            <ion-input type="text" ></ion-input>      
+        </div>
+
+        <div class="policy_number">
+          <ion-label >Tele No called from </ion-label>
+          <ion-input type="text" ></ion-input>      
+        </div>
+
+      <div class="policy_number">
+        <ion-label >Date and Time </ion-label>
+        <ion-input type="text" ></ion-input>      
+      </div>
+
+      <div class="policy_number">
+        <ion-label >Name of the proposer</ion-label>
+        <ion-input type="text" ></ion-input>      
+      </div>
+
+      <div class="policy_number">
+        <ion-label >Tata AIA Life employee name & code</ion-label>
+        <ion-input type="text" ></ion-input>      
+      </div>
+
+      <div class="policy_number">
+        <ion-label >Central Bank of India CIF:</ion-label>
+        <ion-input type="text" ></ion-input>      
+      </div>
+
+      <div class="policy_number">
+        <ion-label>Have you collected or made adequate attempts to collect information about the background of the customer?</ion-label><br><br>
+        <ion-label>
+          <ion-radio value="yes"></ion-radio>
+          Yes
+        </ion-label>    
+        <ion-label>
+          <ion-radio value="no"></ion-radio>
+          No
+        </ion-label>  
+      </div>
+
+      <div class="policy_number">
+        <ion-label>Would you confirm that as per your assessment the purpose of insurance stated by the customer is legitimate and justified?</ion-label><br><br>
+        <ion-label>
+          <ion-radio value="yes"></ion-radio>
+          Yes
+        </ion-label>    
+        <ion-label>
+          <ion-radio value="no"></ion-radio>
+          No
+        </ion-label>  
+      </div>
+
+      <div class="if_yes_relationship">
+        <ion-label>For how long has the Bank’s Sales Manager known the Life to be Insured and Proposer?</ion-label>
+        <div class="life_to_be_insured">
+          <ion-label>Life to be insured</ion-label>
+          <ion-select  interface="popover" placeholder="Select">
+          <ion-select-option value="less than 1 month">Less than 1 month</ion-select-option>
+          <ion-select-option value="parent">1-6 month</ion-select-option>
+          <ion-select-option value="children">6-12 months</ion-select-option>
+          <ion-select-option value="uncle">1-5 years</ion-select-option>
+          <ion-select-option value="uncle">More than 5 years</ion-select-option>
+          </ion-select>
+        </div>
+
+        <div class="life_to_be_proposer">
+          <ion-label>Proposer</ion-label>
+          <ion-select  interface="popover" placeholder="Select">
+          <ion-select-option value="spouse">Less than 1 month</ion-select-option>
+          <ion-select-option value="parent">1-6 month</ion-select-option>
+          <ion-select-option value="children">6-12 months</ion-select-option>
+          <ion-select-option value="uncle">1-5 years</ion-select-option>
+          <ion-select-option value="uncle">More than 5 years</ion-select-option>
+          </ion-select>
+        </div>
+       
+        </div>
+
+        </div>
+
+      </div>
+      <div class="flex_center">
+        <ion-button>Back</ion-button> 
+        <ion-button>Continue</ion-button>
+      </div>
+    </form>
+
+  </div>
+</ion-content>

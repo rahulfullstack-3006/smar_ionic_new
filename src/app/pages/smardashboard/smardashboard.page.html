@@ -1,0 +1,76 @@
+<ion-content>
+  <div class="smardashboard">
+
+      <h1 class="flex_center">SMAR Dashboard</h1>
+
+      <div class="goto_logout_button">
+        <ion-button>Logout</ion-button>
+      </div>
+
+      <div class="deviation_l1_l2">
+        <ion-button>Deviation Approval</ion-button>
+        <ion-button>L1 and L2 Approval</ion-button>
+      </div>
+      
+    <div class="approval_dashboard_number">
+      <ion-grid [fixed]="true">
+        <ion-row>
+          <ion-col class="smar_cases">
+            <h2>68</h2>
+            <p>New</p>
+            <p>Cases</p>
+            <ion-button>View</ion-button>
+          </ion-col>
+  
+          <ion-col class="smar_cases">
+            <h2>73</h2>
+            <p>On hold</p>
+            <p>Cases</p>
+            <ion-button>View</ion-button>
+          </ion-col>
+  
+          <ion-col class="smar_cases">
+            <h2>24</h2>
+            <p>Approved</p>
+            <p>Cases</p>
+            <ion-button>View</ion-button>
+          </ion-col>
+  
+          <ion-col class="smar_cases">
+            <h2>2</h2>
+            <p>Rejected</p>
+            <p>Cases</p>
+            <ion-button>View</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="flex_center">
+      <h1>New Cases</h1>
+    </div>
+  
+    <div class="new_cases_table">
+      <ion-grid>
+        <ion-row>
+          <ion-col>Serial No</ion-col>
+          <ion-col>Policy Number</ion-col>
+          <ion-col>Customer Name</ion-col>
+          <ion-col>Agent Code</ion-col>
+          <ion-col>Submitted On</ion-col>
+        </ion-row>
+
+        <ion-row *ngFor="let item of newCasesViewData">
+          <ion-col>{{item.serial_no}}</ion-col>
+          <ion-col>{{item.policy_number}}</ion-col>
+          <ion-col>{{item.customer_name}}</ion-col>
+          <ion-col>{{item.agent_code}}</ion-col>
+          <ion-col>{{item.submitted_on}}</ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </div>
+
+  </div>
+</ion-content>

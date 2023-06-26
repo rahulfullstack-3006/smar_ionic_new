@@ -1,0 +1,36 @@
+ion-label{
+  color: #4b4b4b;
+  font-weight: 600;
+  font-size: 14px;
+  }
+  .smar1_main{
+    display: flex;
+    margin-left: 10px;
+  }
+  .smar1_main_left,.smar1_main_right{
+    width: 50%;
+  }
+  .smar1_main_right{
+    margin-left: 10px;
+  }
+  .policy_number,.if_yes_relationship{
+    margin-top: 10px;
+  }
+  .sc-ion-input-md-h:not(.legacy-input){
+    min-height: 30px;
+  }
+  .life_to_be_insured{
+    margin-top: 10px
+  }
+  .life_to_be_insured ion-label{
+    font-size: 14px;
+    color:#7c7c7c;
+  }
+  .life_to_be_proposer ion-label{
+    font-size: 14px;
+    color:#7c7c7c;
+  }
+  
+  
+  
+  
