@@ -1,0 +1,52 @@
+<ion-content>
+  <div class="deviation_dashboard_text">
+    <h1>Deviation Dashboard</h1>
+  </div>
+  
+
+  <div class="reject_dashboard_logout">
+    <ion-button>Goto Rejected Cases</ion-button>
+    <ion-button>Goto Dashboard</ion-button>
+    <ion-button>Logout</ion-button>
+  </div>
+
+  <div class="new_cases_table">
+    <!-- <app-table [parentdataSMAR]="dataSMAR"></app-table> -->
+    <!-- <app-common-table></app-common-table> -->
+    <ion-grid>
+      <ion-row>
+
+        <ion-col>Policy Number</ion-col>
+        <ion-col>Plan Name</ion-col>
+        <ion-col>Channel</ion-col>
+        <ion-col>Customer Name</ion-col>
+        <ion-col>Customer Mobile</ion-col>
+        <ion-col>Reason Category</ion-col>
+        <ion-col>Agent Name</ion-col>
+        <ion-col>Agent Code</ion-col>
+        <ion-col>Agent Mobile</ion-col>
+        <ion-col>Office Name</ion-col>
+        <ion-col>Submission Date</ion-col>
+
+      </ion-row>
+
+      <ion-row *ngFor="let item of dataSMAR">
+        <ion-col>{{item.policy_number}}</ion-col>
+        <ion-col>{{item.plan_name}}</ion-col>
+        <ion-col>{{item.channel}}</ion-col>
+        <ion-col>{{item.customer_name}}</ion-col>
+        <ion-col>{{item.customer_mobile}}</ion-col>
+        <ion-col>{{item.reason_category}}</ion-col>
+        <ion-col>{{item.agent_name}}</ion-col>
+        <ion-col>{{item.agent_code}}</ion-col>
+        <ion-col>{{item.agent_mobile}}</ion-col>
+        <ion-col>{{item.office_name}}</ion-col>
+        <ion-col>{{item.submission_date}}</ion-col>
+
+      </ion-row>
+
+    </ion-grid>
+
+  </div>
+
+</ion-content>

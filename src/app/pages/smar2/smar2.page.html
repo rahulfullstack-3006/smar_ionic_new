@@ -1,0 +1,230 @@
+<ion-content>
+  <div class="smar2">
+   <form>
+    <div class="policy_number">
+      <ion-label>Have you verified the occupation of the Life to be insured / Proposer as stated in the proposal and are you satisfied with the correlation of the occupation with the income as stated in the proposal form?
+     </ion-label><br><br>
+      <ion-label>
+        <ion-radio value="yes"></ion-radio>
+        Yes
+      </ion-label>    
+      <ion-label>
+        <ion-radio value="no"></ion-radio>
+        No
+      </ion-label>  
+    </div>
+
+           <!-- row first  start-->
+    <div class="monthly_rs_income">
+      <div class="monthly_details_salary">
+        <ion-label>Monthly income details of the proposer(Rs)</ion-label>
+        <ion-select  interface="popover" placeholder="Select">
+        <ion-select-option value="salary">Salary</ion-select-option>
+        </ion-select>
+        </div>
+
+        <div class="monthly_salary_rs">
+          <ion-label >(Rs)</ion-label>
+           <ion-input type="text" value="0"></ion-input>   
+         </div> 
+    </div>
+
+    <div class="monthly_rs_income">
+      <div class="monthly_details_salary">
+        <ion-label>Monthly income details of the proposer(Rs)</ion-label>
+        <ion-select  interface="popover" placeholder="Select">
+        <ion-select-option value="business">Business</ion-select-option>
+        </ion-select>
+        </div>
+
+        <div class="monthly_salary_rs">
+          <ion-label >(Rs)</ion-label>
+           <ion-input type="text" value="0"></ion-input>   
+         </div> 
+    </div>
+
+           <!-- row first  end-->
+
+
+           <!-- row second  start-->
+    <div class="monthly_rs_income">
+      <div class="monthly_details_salary">
+        <ion-label>Monthly income details of the proposer(Rs)</ion-label>
+        <ion-select  interface="popover" placeholder="Select">
+        <ion-select-option value="agriculture">Agriculture</ion-select-option>
+        </ion-select>
+        </div>
+
+        <div class="monthly_salary_rs">
+          <ion-label >(Rs)</ion-label>
+           <ion-input type="text" value="0"></ion-input>   
+         </div> 
+    </div>
+
+
+    <div class="monthly_rs_income">
+      <div class="monthly_details_salary">
+        <ion-label>Monthly income details of the proposer(Rs)</ion-label>
+        <ion-select  interface="popover" placeholder="Select">
+        <ion-select-option value="other">Other</ion-select-option>
+        </ion-select>
+        </div>
+
+        <div class="monthly_salary_rs">
+          <ion-label >(Rs)</ion-label>
+           <ion-input type="text" value="0"></ion-input>   
+         </div> 
+    </div>
+
+    <!-- row second end -->
+
+    <!-- row third start -->
+    <div class="total_main">
+      <div class="total_income_proposer">
+      <ion-label>Total income of the proposer(Rs)</ion-label>
+      <ion-input type="text" value="0"></ion-input>
+      </div>
+
+      <div class="total_annual_income_proposer">
+        <ion-label>Total Annual income of the proposer(Rs)</ion-label>
+        <ion-input type="text" value="0"></ion-input>
+        </div>
+
+    </div>
+
+    <!-- row third end -->
+
+    <!-- second row start -->
+            <!-- row first  start-->
+            <div class="monthly_rs_income">
+              <div class="monthly_details_salary">
+                <ion-label>Monthly income details of the insured(Rs)</ion-label>
+                <ion-select  interface="popover" placeholder="Select">
+                <ion-select-option value="salary">Salary</ion-select-option>
+                </ion-select>
+                </div>
+        
+                <div class="monthly_salary_rs">
+                  <ion-label >(Rs)</ion-label>
+                   <ion-input type="text" value="0"></ion-input>   
+                 </div> 
+            </div>
+        
+            <div class="monthly_rs_income">
+              <div class="monthly_details_salary">
+                <ion-label>Monthly income details of the insured(Rs)</ion-label>
+                <ion-select  interface="popover" placeholder="Select">
+                <ion-select-option value="business">Business</ion-select-option>
+                </ion-select>
+                </div>
+        
+                <div class="monthly_salary_rs">
+                  <ion-label >(Rs)</ion-label>
+                   <ion-input type="text" value="0"></ion-input>   
+                 </div> 
+            </div>
+        
+                   <!-- row first  end-->
+        
+        
+                   <!-- row second  start-->
+            <div class="monthly_rs_income">
+              <div class="monthly_details_salary">
+                <ion-label>Monthly income details of the insured(Rs)</ion-label>
+                <ion-select  interface="popover" placeholder="Select">
+                <ion-select-option value="agriculture">Agriculture</ion-select-option>
+                </ion-select>
+                </div>
+        
+                <div class="monthly_salary_rs">
+                  <ion-label >(Rs)</ion-label>
+                   <ion-input type="text" value="0"></ion-input>   
+                 </div> 
+            </div>
+        
+        
+            <div class="monthly_rs_income">
+              <div class="monthly_details_salary">
+                <ion-label>Monthly income details of the insured(Rs)</ion-label>
+                <ion-select  interface="popover" placeholder="Select">
+                <ion-select-option value="other">Other</ion-select-option>
+                </ion-select>
+                </div>
+        
+                <div class="monthly_salary_rs">
+                  <ion-label >(Rs)</ion-label>
+                   <ion-input type="text" value="0"></ion-input>   
+                 </div> 
+            </div>
+        
+            <!-- row second end -->
+        
+            <!-- row third start -->
+            <div class="total_main">
+              <div class="total_income_proposer">
+              <ion-label>Total income of the insured(Rs)</ion-label>
+              <ion-input type="text" value="0"></ion-input>
+              </div>
+        
+              <div class="total_annual_income_proposer">
+                <ion-label>Total Annual income of the insured(Rs)</ion-label>
+                <ion-input type="text" value="0"></ion-input>
+                </div>
+        
+            </div>
+        
+            <!-- row third end -->
+            <!-- second row end -->
+
+            <div class="policy_number">
+              <ion-label>Income proof verified</ion-label>
+              <ion-list>
+                <ion-item>
+                  <ion-select  placeholder="Select Income proof verified" [multiple]="true">
+                    <ion-select-option value="apples">ITR</ion-select-option>
+                    <ion-select-option value="oranges">Form 16</ion-select-option>
+                    <ion-select-option value="bananas">Pay-slip	</ion-select-option>
+                    <ion-select-option value="apples">Balance sheet	</ion-select-option>
+                    <ion-select-option value="oranges">Bank statement (verified 6 months)	</ion-select-option>
+                    <ion-select-option value="bananas">P & L</ion-select-option>
+                    <ion-select-option value="bananas">Others</ion-select-option>
+                  </ion-select>
+                </ion-item>
+              </ion-list>
+            </div>
+
+            <div class="specify">
+              <ion-label >Specify</ion-label>
+               <ion-input type="text"></ion-input>   
+             </div> 
+
+             <div class="policy_number">
+              <ion-label>Other source of income</ion-label><br><br>
+              <ion-label>
+                <ion-radio value="regular"></ion-radio>
+                Regular
+              </ion-label>    
+              <ion-label>
+                <ion-radio value="not_regular"></ion-radio>
+                Not Regular
+              </ion-label>  
+            </div>
+
+            <div class="policy_number">
+              <ion-label >Specify (for regular)</ion-label>
+               <ion-input type="text"></ion-input>   
+             </div> 
+    
+             <div class="policy_number">
+              <ion-label >Specify (for not regular)</ion-label>
+               <ion-input type="text"></ion-input>   
+             </div> 
+
+             <div class="flex_center">
+              <ion-button>Back</ion-button> 
+              <ion-button>Continue</ion-button>
+            </div>
+      
+          </form>
+  </div>
+</ion-content>
