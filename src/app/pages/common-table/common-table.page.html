@@ -1,20 +1,9 @@
-<!-- <ion-grid>
+<ion-grid>
   <ion-row>
-    <ion-col>Policy Number</ion-col>
-    <ion-col>Plan Name</ion-col>
-    <ion-col>Channel</ion-col>
-    <ion-col>Customer Name</ion-col>
-    <ion-col>Customer Mobile</ion-col>
-    <ion-col>Reason Category</ion-col>
-    <ion-col>Agent Name</ion-col>
-    <ion-col>Agent Code</ion-col>
-    <ion-col>Agent Mobile</ion-col>
-    <ion-col>Office Name</ion-col>
-    <ion-col>Submission Date</ion-col>
-
+    <ion-col *ngFor="let test of columnDataSMAR;let i=index;">{{test}}</ion-col>
   </ion-row>
 
-  <ion-row *ngFor="let item of parentSMARData">
+  <ion-row *ngFor="let item of dataSMAR">
     <ion-col>{{item.policy_number}}</ion-col>
     <ion-col>{{item.plan_name}}</ion-col>
     <ion-col>{{item.channel}}</ion-col>
@@ -29,4 +18,4 @@
 
   </ion-row>
 
-</ion-grid> -->
+</ion-grid>

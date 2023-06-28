@@ -1,0 +1,121 @@
+<ion-content>
+  <div class="deviation_dashboard_text">
+    <h1>Peer Dashboard</h1>
+  </div>
+  
+
+  <div class="reject_dashboard_logout">
+    <ion-button (click)="goToDashboard()">Goto Dashboard</ion-button>
+    <ion-button (click)="goToL1L2Dashboard()">Goto L1L2 Dashboard</ion-button>
+    <ion-button>Logout</ion-button>
+  </div>
+
+  
+  <div class="customer_details">
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <ul>
+            <li *ngFor="let customerData of customerDetails">
+              <span><strong>{{customerData.customer_heading}}</strong></span>&nbsp;
+              <span><strong>{{customerData.customer_data}}</strong></span>
+            </li>
+          </ul>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+
+  <div class="remark_area">
+    <ion-label>Remark:</ion-label>
+    <ion-textarea
+    placeholder="Enter text, leave the textarea, come back, and type to clear"
+    [clearOnEdit]="true"
+    ></ion-textarea>
+ </div>
+
+
+ <!-- <div class="customer_yes_no_details">
+  <ion-list>
+    <ion-item  *ngFor="let item of customerDetails">
+      <ion-label>{{item.customer_heading}}</ion-label>
+      <ion-toggle slot="end" checked></ion-toggle>
+    </ion-item>
+  </ion-list>
+ </div> -->
+
+
+
+  <div class="documents_tab">
+    <ion-content>
+      <ion-segment>
+        <ion-segment-button>
+          <ion-label>Insurer Documents</ion-label>
+        </ion-segment-button>
+        <ion-segment-button>
+          <ion-label>Proposer Documents</ion-label>
+        </ion-segment-button>
+      </ion-segment> 
+    </ion-content>
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Item</ion-label>
+      </ion-item>
+    </ion-list>
+
+      <!-- <ion-segment (ionChange)="segmentChanged($event)" value="list">
+        <ion-segment-button value="list">
+          <ion-label>
+            List
+          </ion-label>
+        </ion-segment-button>
+        <ion-segment-button value="card">
+          <ion-label>
+            Card
+          </ion-label>
+        </ion-segment-button>
+      </ion-segment>
+      <ion-list
+        class="animate__animated animate__slideInUp animate__fast"
+        *ngIf="segment === 'list'"
+      >
+        <ion-item *ngFor="let item of arr; let index = index">
+          <ion-label>Item {{ index + 1 }}</ion-label>
+        </ion-item>
+      </ion-list>
+    
+      <div
+        class="animate__animated animate__slideInUp animate__fast"
+        *ngIf="segment === 'card'"
+      >
+        <ion-card *ngFor="let item of arr; let index = index">
+          <ion-card-content>
+            <h2>Card {{ index + 1 }}</h2>
+          </ion-card-content>
+        </ion-card>
+      </div> -->
+
+  </div>
+
+
+  <!-- <div class="customer_details_slidder">
+    <ion-list>
+      <ion-item>
+        <ion-label>
+          <ul>
+            <li *ngFor="let item of customerDetails">
+              <span><strong>{{item.customer_heading}}</strong></span>&nbsp;
+              <ion-toggle slot="end" checked class="customer_slidder"></ion-toggle>
+            </li>
+          </ul>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div> -->
+
+
+ 
+
+
+</ion-content>

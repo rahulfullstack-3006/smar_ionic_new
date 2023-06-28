@@ -1,0 +1,97 @@
+<ion-content>
+  <div class="smardashboard">
+
+      <h1 class="flex_center">L2 Approval Dashboard</h1>
+
+      <div class="goto_logout_button">
+        <ion-button class="got_to_dashboard" (click)="goToDashboard()">Goto Dashboard</ion-button>
+        <ion-button class="logout">Logout</ion-button>
+      </div>
+    
+    <div class="approval_dashboard_number">
+      <ion-grid [fixed]="true">
+        <ion-row>
+          <ion-col class="smar_cases">
+            <h2>68</h2>
+            <p>New</p>
+            <p>Cases</p>
+            <ion-button>View</ion-button>
+          </ion-col>
+  
+          <ion-col class="smar_cases">
+            <h2>73</h2>
+            <p>On hold</p>
+            <p>Cases</p>
+            <ion-button>View</ion-button>
+          </ion-col>
+  
+          <ion-col class="smar_cases">
+            <h2>24</h2>
+            <p>Approved</p>
+            <p>Cases</p>
+            <ion-button>View</ion-button>
+          </ion-col>
+  
+        </ion-row>
+      </ion-grid>
+    </div>
+
+    <div class="l2_approval_search_filter">
+      <div>
+        <ion-button class="l2_button" (click)="l1Approval()">L1 Approval</ion-button>
+      </div>
+
+      <div class="policy_search">
+        <ion-input  labelPlacement="stacked" placeholder="Enter policy number" [(ngModel)]="searchTerm"></ion-input>
+      <ion-button class="search_global" (click)="search()">Search</ion-button>
+      </div>
+
+      <div class="date_search_main">
+        <div class="from_date_search">
+          <ion-label>From Date:</ion-label>
+        <ion-input type="date" id="from_date" [(ngModel)]="fromDate"></ion-input>
+        
+        </div>
+  
+        <div class="to_date_search">
+          <ion-label>To Date:</ion-label>
+        <ion-input type="date" id="to_date" [(ngModel)]="toDate"/> 
+        </div>
+  
+        <div class="global_search">
+        <ion-button  (click)="searchDate()">Search</ion-button>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="flex_center">
+      <h1>New Cases</h1>
+    </div>
+  
+    <div class="new_cases_table">
+      <ion-grid>
+        <ion-row>
+          <ion-col *ngFor="let columnData of columnHeader">{{columnData}}</ion-col>
+        </ion-row>
+
+        <ion-row *ngFor="let item of dataSMAR">
+          <ion-col>{{item.serial_no}}</ion-col>
+          <ion-col>{{item.policy_number}}</ion-col>
+          <ion-col>{{item.agent_code}}</ion-col>
+          <ion-col>{{item.agent_name}}</ion-col>
+          <ion-col>{{item.agent_contact}}</ion-col>
+          <ion-col>{{item.propser_name}}</ion-col>
+          <ion-col>{{item.propser_mobile}}</ion-col>
+          <ion-col>{{item.video_psc_status}}</ion-col>
+          <ion-col>{{item.date}}</ion-col>
+          <ion-col>{{item.source}}</ion-col>
+          <ion-col>{{item.anp}}</ion-col>
+        </ion-row>
+
+      </ion-grid>
+
+    </div>
+
+  </div>
+</ion-content>

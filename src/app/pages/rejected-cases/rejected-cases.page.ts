@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CommonTablePage } from '../common-table/common-table.page';
 import { Router } from '@angular/router';
 
 export interface SMARDetails {
@@ -17,12 +16,11 @@ export interface SMARDetails {
 }
 
 @Component({
-  selector: 'app-deviationdashboard',
-  templateUrl: './deviationdashboard.page.html',
-  styleUrls: ['./deviationdashboard.page.scss'],
+  selector: 'app-rejected-cases',
+  templateUrl: './rejected-cases.page.html',
+  styleUrls: ['./rejected-cases.page.scss'],
 })
-export class DeviationdashboardPage implements OnInit {
-
+export class RejectedCasesPage implements OnInit {
   dataSMAR:SMARDetails[]= [
     {policy_number: 'C45612389', plan_name: 'Tata AIA Life Insurance Saral Jeevan Bima',channel:'HDFCSolution',customer_name:'VIPUL GANPAT SALUNKE	',customer_mobile:9634555789,reason_category:'Same Mobile NUMBER',agent_name:'Vipul S	',agent_code:'OOABYU7',agent_mobile:9845612369,office_name:'TATA AIA Rewari',submission_date:new Date(2023, 5, 1)},
     {policy_number: 'C45615658', plan_name: 'Tata AIA Life Insurance Saral Jeevan Bima',channel:'DBSSolution',customer_name:'VIPUL GANPAT SALUNKE	',customer_mobile:9632145789,reason_category:'Same Mobile No',agent_name:'Vipul S	',agent_code:'OOABYU7',agent_mobile:9845612369,office_name:'TATA AIA Rewari',submission_date:new Date(2023, 5, 2)},
@@ -36,20 +34,21 @@ export class DeviationdashboardPage implements OnInit {
 
   ];
   dataSMARHeader:any;
+
   constructor(private router:Router) { }
 
-  ngOnInit() {  
+  ngOnInit() {
     this.dataSMARHeader=Object.keys(this.dataSMAR[0])  
     console.log("dataSmar",Object.keys(this.dataSMAR[0]));
-    
+  }
+
+  goToNewCase(){
+  this.router.navigate(['/deviationdashboard']);
   }
 
   goToDashboard(){
     this.router.navigate(['/smardashboard']);
-  }
-
-  goToRejected(){
-    this.router.navigate(['/rejectedCases']);
 
   }
+
 }

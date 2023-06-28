@@ -35,6 +35,22 @@ const routes: Routes = [
     path: 'common-table',
     loadChildren: () => import('./pages/common-table/common-table.module').then( m => m.CommonTablePageModule)
   },
+  {
+    path: 'rejectedCases',
+    loadChildren: () => import('./pages/rejected-cases/rejected-cases.module').then( m => m.RejectedCasesPageModule)
+  },
+  {
+    path: 'l1approvalDashboard',
+    loadChildren: () => import('./pages/l1approval-dashboard/l1approval-dashboard.module').then( m => m.L1approvalDashboardPageModule)
+  },
+  {
+    path: 'l2approvalDashboard',
+    loadChildren: () => import('./pages/l2approval-dashboard/l2approval-dashboard.module').then( m => m.L2approvalDashboardPageModule)
+  },
+  {
+    path: 'srrejectedcase',
+    loadChildren: () => import('./pages/srrejectedcase/srrejectedcase.module').then( m => m.SrrejectedcasePageModule)
+  },
 ];
 
 @NgModule({

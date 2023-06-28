@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 
 
@@ -30,9 +31,18 @@ export class SmardashboardPage implements OnInit {
    ]
 
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
+  }
+
+  onDeviationApproval(){
+  this.router.navigate(['/deviationdashboard']);
+  }
+
+  l1l2Approval(){
+    this.router.navigate(['/l1approvalDashboard']);
+
   }
 
 }
